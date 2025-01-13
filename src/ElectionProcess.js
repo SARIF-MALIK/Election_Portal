@@ -9,14 +9,14 @@ const ElectionProcess = () => {
       <section className="section">
         <h2>Steps wise Overview</h2>
         <ul>
-          <li><strong>Step 1:</strong> Primaries and Caucuses</li>
-          <li><strong>Step 2:</strong> National Conventions</li>
-          <li><strong>Step 3:</strong> General Election</li>
-          <li><strong>Step 4:</strong> Electoral College</li>
-          <li>Inauguration</li>
+       <a href="#step_one"><li><strong>Step 1:</strong> Primaries and Caucuses</li></a>  
+        <a href="#step_two"><li><strong>Step 2:</strong> National Conventions</li></a>  
+          <a href="#step_three"><li><strong>Step 3:</strong> General Election</li></a>
+          <a href="#step_four"><li><strong>Step 4:</strong> Electoral College</li></a>
+          <a href="#inaugration"><li>Inauguration</li></a>
         </ul>
-      </section>
-
+      </section> 
+   
       <section className="section">
   <h2>U.S. Constitution Requirements</h2>
   <ul className="requirements-list">
@@ -34,11 +34,17 @@ const ElectionProcess = () => {
     </li>
   </ul>
 </section>
-
-
-      <section className="section">
-        <h2>Step 1: Primaries and Caucuses</h2>
-        <p>
+<section>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item" id="step_one">
+    <h2 class="accordion-header">
+      <button class="accordion-button step_head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      Step 1: Primaries and Caucuses
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p>
           To choose a candidate for the general election, political parties use two key methods: <strong>Primaries</strong> and <strong>Caucuses</strong>. These processes determine which candidate will represent the party in the final election.
         </p>
         <div className="subsection">
@@ -58,23 +64,32 @@ const ElectionProcess = () => {
             <br/>
           </ul>
         </div>
-        <div className="image-row">
+
+        <div className="container">
+  <div className="row text-center">
+    <div className="col-12 col-md-4 d-flex justify-content-center">
       <img
-        src='https://i.ytimg.com/vi/KRHRuGIiWHA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCpB1XrMnPGUucPyLRTqQMKsIbbEQ'
+        src="https://i.ytimg.com/vi/KRHRuGIiWHA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCpB1XrMnPGUucPyLRTqQMKsIbbEQ"
+        className="img-thumbnail img-fluid hover-zoom"
         alt="Example 1"
-        className="image-item"
-      />
-      <img
-        src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202411/6729c1617696c-us-election-055523977-16x9.jpg?size=948:533"
-        alt="Example 2"
-        className="image-item"
-      />
-      <img
-        src="https://edata.ndtv.com/feeds/liveblog/6948523/638664761917745119.jpg"
-        alt="Example 3"
-        className="image-item"
       />
     </div>
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <img
+        src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202411/6729c1617696c-us-election-055523977-16x9.jpg"
+        className="img-thumbnail img-fluid hover-zoom"
+        alt="Example 2"
+      />
+    </div>
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <img
+        src="https://edata.ndtv.com/feeds/liveblog/6948523/638664761917745119.jpg"
+        className="img-thumbnail img-fluid hover-zoom"
+        alt="Example 3"
+      />
+    </div>
+  </div>
+</div>
 
         <div className="subsection">
           <h3>Caucuses</h3>
@@ -96,16 +111,19 @@ const ElectionProcess = () => {
               <p>▶ These delegates will represent the candidate at county, state, and eventually national conventions.</p>
             </li>
           </ul>
-        </div>
-      </section>
-
-
-
-    
-
-      <section className="section">
-        <h2>Step 2: National Conventions</h2>
-        <p>
+        </div>.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" id="step_two">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed step_head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+      Step 2: National Conventions
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+      <p>
         After the primaries and caucuses conclude, each political party holds a significant event called
         the <strong>National Conventions</strong>. These conventions are key milestones in the U.S. election process
         where the final candidate for president is officially selected to represent the party. 
@@ -125,10 +143,17 @@ const ElectionProcess = () => {
           general election.
           </li>
         </ul>
-      </section>
-
-      <section className="section">
-        <h2>Step 3: General Election</h2>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" id="step_three">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed step_head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      Step 3: General Election
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
         <p>
         After the primaries, caucuses, and national conventions are complete, the final stage begins: <strong> The General Election</strong>. This
 is when voters across the entire country come together to make their choice for the next President and Vice President of
@@ -161,29 +186,19 @@ the United States.
             votes.</p>
           </li>
         </ol>
-      </section>
-
-      <div className="image-row">
-      <img
-        src="https://a.c-dn.net/c/content/dam/publicsites/igcom/uk/images/Rebrand/US_Election/US_Camapign_Hero_Desktop_Mobile.jpg/jcr:content/renditions/original-size.webp"
-        alt="Example 1"
-        className="image-item"
-      />
-      <img
-        src="https://cz.usembassy.gov/wp-content/uploads/sites/22/00Good.jpg"
-        alt="Example 2"
-        className="image-item"
-      />
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIr5IEvKIJo2sq3tgcwR8ENjwJY3AACICAPw&s"
-        alt="Example 3"
-        className="image-item"
-      />
+      </div>
     </div>
+  </div>
 
-      <section className="section">
-        <h2>Step 4: Electoral College</h2>
-        <p>The Electoral College plays a crucial role in determining who becomes the next President of the United States. While citizens vote during the general election, the actual
+  <div class="accordion-item" id="step_four">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed step_head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Step 4: Electoral College
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          <p>The Electoral College plays a crucial role in determining who becomes the next President of the United States. While citizens vote during the general election, the actual
         selection of the president happens through this system.</p>
         <ul>
           <li><strong>Total Electoral Votes:</strong> 
@@ -217,14 +232,51 @@ the United States.
           </li>
 
         </ul>
-      </section>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item" id="inaugration">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed step_head" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Inauguration
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+          The Inauguration is the final step, where the winning President and Vice President are officially sworn into office on January 20th following the general election.
+          </div>
+        </div>
+      </div>
+</div>
+</section>
 
-      <section className="section">
-        <h2>Inauguration</h2>
-        <p>
-          The Inauguration is the final step, where the winning President and Vice President are officially sworn into office on <strong>January 20th</strong> following the general election.
-        </p>
-      </section>
+<div className="container">
+  <div className="row text-center">
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <img
+        src="https://a.c-dn.net/c/content/dam/publicsites/igcom/uk/images/Rebrand/US_Election/US_Camapign_Hero_Desktop_Mobile.jpg/jcr:content/renditions/original-size.webp"
+        className="img-thumbnail img-fluid hover-zoom"
+        alt="Example 1"
+      />
+    </div>
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <img
+        src="https://cz.usembassy.gov/wp-content/uploads/sites/22/00Good.jpg"
+        className="img-thumbnail img-fluid hover-zoom"
+        alt="Example 2"
+      />
+    </div>
+    <div className="col-12 col-md-4 d-flex justify-content-center">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIr5IEvKIJo2sq3tgcwR8ENjwJY3AACICAPw&s"
+        className="img-thumbnail img-fluid hover-zoom"
+        alt="Example 3"
+      />
+    </div>
+  </div>
+</div>
+
+
     </div>
   );
 };
