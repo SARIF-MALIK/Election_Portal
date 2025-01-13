@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .election-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -37,8 +41,14 @@
   }
   
   ul {
-    list-style-type: disc;
+    list-style-type: disclosure-closed;
     padding-left: 40px;
+  }
+
+  .election-container a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
   }
 
   ol {
@@ -103,4 +113,23 @@
     transform: scale(1.05); /* Slight zoom effect on hover */
   }
   
-  
+.step_head{
+  font-size: 1.3rem;
+}
+
+.img-thumbnail{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  background-position: center;
+}
+
+.hover-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-zoom:hover {
+  transform: scale(1.1); /* Increase the size by 10% */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for a subtle effect */
+}
+
