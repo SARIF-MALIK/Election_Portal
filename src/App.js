@@ -5,6 +5,8 @@ import './index.css';
 import ElectionProcess from './ElectionProcess';
 import { statesData } from './data'; // Ensure this is properly imported and contains valid GeoJSON data
 
+
+
 function App() {
   const center = [37.8, -96]; // Center of the US
   const [selectedState, setSelectedState] = useState(null);
@@ -104,6 +106,7 @@ function App() {
   return (
     <>
       <div className="app">
+     
         <MapContainer
           center={center}
           zoom={4}

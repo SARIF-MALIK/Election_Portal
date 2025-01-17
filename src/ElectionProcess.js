@@ -1,5 +1,6 @@
 import React from 'react';
 import './ElectionProcess.css';
+import Map from './components/Map';
 
 const ElectionProcess = () => {
   return (
@@ -188,6 +189,7 @@ the United States.
         </ol>
       </div>
     </div>
+    <Map/>
   </div>
 
   <div class="accordion-item" id="step_four">

@@ -1,0 +1,52 @@
+
+/* Style the score and labels */
+.state-label {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.state-label span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Style for the score */
+.score {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Style the vote buttons container */
+.vote-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-top: 5px;
+}
+
+/* Style the buttons for upvote/downvote */
+.vote-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Style for the downvote button */
+.vote-buttons button.downvote {
+    background-color: #f44336;
+}
+
+/* Additional styles */
+.vote-buttons button:hover {
+    opacity: 0.8;
+}
+
+#state-name {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
